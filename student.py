@@ -21,9 +21,14 @@ class Student:
     def result(self):
         if self.calc_average() > 30:
             return "pass"
+
         else:
             return "fail"
 
 
 d1 = Student("hari", 20, 30, 40, 20)
+d2 = Student("gita", 30, 40, 50, 60)
+print(d2.result())
 print(d1.calc_average())
+print(d1.result())
+print(d2.calc_average())
